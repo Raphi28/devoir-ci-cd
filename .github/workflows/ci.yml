@@ -82,6 +82,7 @@ jobs:
             key: ${{ runner.os }}-npm-${{ hashFiles('package-lock.json') }}
 
         - name: Install dependencies
+          working-directory: projet-react
           run: npm ci
 
         - name: Build production
