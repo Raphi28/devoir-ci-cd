@@ -6,8 +6,7 @@ NPM := cd $(APP_DIR) &&
 install:
 	$(NPM) npm ci
 
-# Cibles qui ont besoin des dépendances installées : réinstalle toutes
-# seules si node_modules manque ou est périmé (une seule ligne pour toutes).
+
 NEEDS_INSTALL := dev test test-coverage lint build
 $(NEEDS_INSTALL): $(APP_DIR)/node_modules
 
