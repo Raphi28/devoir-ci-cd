@@ -23,11 +23,11 @@ jobs:
             port: ${{ secrets.SSH_PORT }}
 
             script: |
-                if [ ! -d ~/app/.git ]; then
-                git clone https://github.com/Raphi28/devoir-ci-cd.git ~/app
+                if [ ! -d ~/appmauduit/.git ]; then
+                git clone https://github.com/Raphi28/devoir-ci-cd.git ~/appmauduit
                 else
-                cd ~/app
+                cd ~/appmauduit
                 git pull origin main
                 fi
-                cd ~/app
+                cd ~/appmauduit
                 docker compose up -d --build
