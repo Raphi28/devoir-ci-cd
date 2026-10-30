@@ -56,6 +56,13 @@ jobs:
         runs-on: ubuntu-latest
         needs: test
         steps:
+
+        - name: Debug
+          run: |
+            pwd
+            ls -la
+            find . -name package.json
+
         - name: Checkout
           uses: actions/checkout@v4
 
