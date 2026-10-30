@@ -1,5 +1,7 @@
 # Portfolio interactif, React
 
+[![CI](https://github.com/Raphi28/devoir-ci-cd/actions/workflows/ci.yml/badge.svg)](https://github.com/Raphi28/devoir-ci-cd/actions/workflows/ci.yml)
+
 Petit portfolio développé avec **React** (Vite) : une page à sections (à propos, projets, contact), avec un projet interactif testé automatiquement. Elle expose :
 
 - Une section **A propos** avec une courte présentation
